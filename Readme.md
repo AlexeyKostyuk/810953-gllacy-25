@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Костюк](https://up.htmlacademy.ru/htmlcss/25/user/810953).
-* Наставник: `Андрей Пудов`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
