@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #ffffff;
   text-transform: none;
   background-color: #849d8f;
@@ -17,6 +17,7 @@ a {
     text-decoration: none;
   }
 .main-navigation {
+
     font-size: 16px;
     line-height: 18px;
     color: #ffffff;
@@ -27,14 +28,186 @@ a {
 }
 .site-navigation a {
     color: #ffffff;
+    margin-right: 4px;
+    margin-left: 1px;
+    padding: 7px 12px 6px 14px;
 }
+
 .site-navigation a:hover {
-    color:#323232;
+    margin-right: 4px;
+    margin-left: 1px;
+    padding: 7px 12px 6px 14px;
+    font-weight: 700;
+    color: black;
+    border-radius: 14px;
     background-color: #f7f6f3;
 }
-.subkatalogue а:hover {
-    background-color: #fbded7;
+.site-navigation a:active {
+    background-color: #ededed;
+    padding: 7px 12px 6px 14px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 14px;
+    background: #ededed;
+    box-shadow: inset 0px 2px 1px #696969;
 }
-.subkatalogue а:active {
+.subcatalog {
+    display:none;
+    list-style: none;
+    position: absolute;
+    width: 143px;
+    padding: 0;
+    color: #323232;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+}
+.subcatalog a {
+    font-size: 14px;
+    line-height: 16px;
+    color:#323232;
+}
+li:hover .subcatalog {
+    display: block;
+}
+
+.subcatalog li:hover > a {
+    display: block;
+    width: 123px;
+    margin: 0;
+    padding: 7px 12px 6px 14px;
+    color: #323232;
+    background-color: #fbded7;
+    border-radius: 0;
+}
+.subcatalog li:active > a {
     background-color: #f6b5a5;
+    color:#ffffff;
+}
+.subcatalog .catalog-active2 {
+    background-color: #d07058;
+    color:#fff;
+}
+.catalog-active {
+
+    background-color: #d07058;
+    color:#fff;
+}
+.site-navigation .catalog-active:active {
+    background-color: #ededed;
+    padding: 7px 12px 6px 14px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 14px;
+    background: #ededed;
+    box-shadow: inset 0px 2px 1px #696969;
+}
+.index-active:active {
+    background-color: #ededed;
+    padding: 7px 12px 6px 14px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 14px;
+    background: #ededed;
+    box-shadow: inset 0px 2px 1px #696969;
+}
+.btn-search {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 8px;
+    padding-left: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 0;
+    background-color: #9db1a5;
+    border-radius: 16px;
+    vertical-align: top;
+}
+.search-form {
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+.btn-search:hover {
+    display:block;
+    background-color: #f8f7f4;
+    color: #323232;
+    /* тёмная лупа */
+}
+.account-form {
+    display: none;
+    width: 241px;
+    padding: 20px 17px 14px 19px;
+    min-height: 174px;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+    z-index: 100; 
+    /* две кнопки сюда перенести надо?! */
+}
+.btn-login:hover {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 16px;
+    border: 0;
+    background-color: #9db1a5;
+    border-radius: 16px;
+    vertical-align: top;
+}
+.features {
+    margin-bottom: 40px;
+    padding: 25px 15px 22px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    background-color: #eadcbe;
+    background-image: url("../img/Вафля-фон.png");
+    background-repeat: repeat-x;
+    min-height: 246px;
+    border-radius: 15px;
+/* 4 картинки */
+}
+.blog {
+    width: 540px;
+    float: left;
+    padding: 22px 0px 0px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    background-image: url("../img/Клубничныйфон.jpg");
+    min-height: 198px;
+    border-radius: 11px;
+}
+.blogtext {
+    text-decoration: none;
+}
+.subscribe {
+    float: right;
+    width: 560px;
+    background-color: #f8f7f4;
+    background-image: url("../img/Почтовый-фон.jpg");
+    border-radius: 11px;
+    min-height: 220px;
+/* форма с почтой тут будет?! */
+}
+.subscribe-text {
+    color:#323232;
+}
+.main-footer {
+    list-style: none;   
+    /* тут делать 4 класса под соц сети? */
+}
+.footer-nav {
+    list-style: none;
 }
