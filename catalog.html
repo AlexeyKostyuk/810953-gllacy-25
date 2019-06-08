@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
-    <link href="normalize.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,10 +16,10 @@
                 <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
             </a>
             <ul class="site-navigation">
-                <li><a href=#>Каталог</a>
-                    <ul class="subkatalogue">
+                <li><a class="catalog-active" href=#>Каталог</a>
+                    <ul class="subcatalog">
                         <li><a href="#"><strong>Новинки</strong></a></li>
-                        <li><a href="catalog.html">Сливочное</a></li>
+                        <li><a class="catalog-active2" href="catalog.html">Сливочное</a></li>
                         <li><a href="#">Щербеты</a></li>
                         <li><a href="#">Фруктовый лёд</a></li>
                         <li><a href="#">Мелорин</a></li>
@@ -30,28 +30,28 @@
             </ul>
             <div class="top-right-header-nav">
                 <div class="search">
-                    <a href="#" class="btn-search">поиск по сайту</a>
+                    <a href="#" class="btn-search"> <img src="img/loupe.svg" width="17" height="17" alt="поиск по сайту"> </a>
                     <form class="search-form" action="http://echo.htmlacademy.ru" method="post">
-                        <label class="search-label visually-hidden" for="search">Форма поиска</label>
+                        <label class="search-label" for="search" hidden>Форма поиска</label>
                         <input class="search-input" type="search" id="search" placeholder="Что ищем?">
                     </form>
                 </div>
                 <div class="login">
-                    <a href="#" class="bnt-login">Вход</a>
+                    <a href="#" class="bnt-login"><img src="img/вход.svg" width="21" height="19" alt="вход"></a>
                     <form class="account-form" action="http://echo.htmlacademy.ru" method="post">
                         <input class="account-input" type="email" name="account-email" id="account-email"
                             placeholder="Электронная почта">
-                        <label class="account-label visually-hidden" for="account-email">Электронная почта</label>
+                        <label class="account-label" for="account-email" hidden>Электронная почта</label>
                         <input class="account-input" type="text" name="password" id="account-password"
                             placeholder="Пароль">
-                        <label class="account-label visually-hidden" for="account-password">Пароль</label>
+                        <label class="account-label" for="account-password" hidden>Пароль</label>
                         <button class="account-btn" type="submit" value="Войти">Войти</button>
                     </form>
                     <a href="#" class="login-link">Забыли пароль?</a>
                     <a href="#" class="login-link">Новая регистрация</a>
                 </div>
                 <div class="basket-full">
-                    <a href="#" class="basket-btn-full"><span class="basket-items-quantity">2 товара</span></a>
+                    <a href="#" class="basket-btn-full"><img src="img/корзина2.svg" width="21" height="20" alt="корзина"><span class="basket-items-quantity">2 товара</span></a>
                     <table class="basket-table">
                         <tr class="basket-good">
                             <td class="basket-good-delete">
@@ -184,7 +184,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="html академия">
         </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©2017</p>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> ©2017</p> 
     </footer>
 </body>
 
